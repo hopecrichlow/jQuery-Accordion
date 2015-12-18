@@ -1,8 +1,10 @@
 // Put any @imports here
 // See Readme for a list of supported ones
 
+$dark-blue: #0042D0;
 $light-blue: #6CF8FC;
-$yellow: #F6B34B;
+$yellow: #FBD45F;
+$orange: #F6B34B;
 
 body {
   background: black;
@@ -11,23 +13,37 @@ body {
   .container {
     margin: auto;
     width: 600px;
+    height: 600px;
   }
-    ul {
-      border: 2px solid $light-blue;
-      border-radius: 0 0 7px 7px;
+    .section-one, .section-two, .section-three {
+      border: 1px solid $dark-blue;
+      border-radius: 5x;
       list-style: none;
       padding: 0;
     }
-      li {
-        color: $light-blue;
-      }
         h2 {
-          background-color: $light-blue;
+          background-color: $dark-blue;
           color: black;
           margin: 0;
           padding: 10px;
+          height: 30px;
+        }
+        h2:hover {
+          cursor: pointer;
+          background-color: lighten($dark-blue, 20%);
         }
         p {
           color: yellow;
           margin: 20px;
+        }
+        .close {
+          height: 0px;
+          overflow: scroll;
+          transition: height 1s;
+        }
+        .open {
+          height: 200px;
+          display: block;
+          overflow: scroll;
+          transition: height 1s;
         }

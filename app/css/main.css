@@ -4,25 +4,39 @@ body {
 
 .container {
   margin: auto;
-  width: 600px; }
+  width: 600px;
+  height: 600px; }
 
-ul {
-  border: 2px solid #6CF8FC;
-  border-radius: 0 0 7px 7px;
+.section-one, .section-two, .section-three {
+  border: 1px solid #0042D0;
+  border-radius: 5x;
   list-style: none;
   padding: 0; }
 
-li {
-  color: #6CF8FC; }
-
 h2 {
-  background-color: #6CF8FC;
+  background-color: #0042D0;
   color: black;
   margin: 0;
-  padding: 10px; }
+  padding: 10px;
+  height: 30px; }
+
+h2:hover {
+  cursor: pointer;
+  background-color: #3776ff; }
 
 p {
   color: yellow;
   margin: 20px; }
+
+.close {
+  height: 0px;
+  overflow: scroll;
+  transition: height 1s; }
+
+.open {
+  height: 200px;
+  display: block;
+  overflow: scroll;
+  transition: height 1s; }
 
 /*# sourceMappingURL=main.css.map */
