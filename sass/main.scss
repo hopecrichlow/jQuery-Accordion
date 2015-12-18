@@ -1,6 +1,33 @@
 // Put any @imports here
 // See Readme for a list of supported ones
 
+$light-blue: #6CF8FC;
+$yellow: #F6B34B;
+
 body {
-  background: #e2ebf3;
+  background: black;
+  width: 100%;
 }
+  .container {
+    margin: auto;
+    width: 600px;
+  }
+    ul {
+      border: 2px solid $light-blue;
+      border-radius: 0 0 7px 7px;
+      list-style: none;
+      padding: 0;
+    }
+      li {
+        color: $light-blue;
+      }
+        h2 {
+          background-color: $light-blue;
+          color: black;
+          margin: 0;
+          padding: 10px;
+        }
+        p {
+          color: yellow;
+          margin: 20px;
+        }
